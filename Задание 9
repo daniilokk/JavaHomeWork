@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите скорость Васи");
+        int u = scan.nextInt();
+        System.out.println("Сколько часов Вася катался по мкаду?-");
+        int t = scan.nextInt();
+        int to4ka=u*t;
+        if(to4ka>108){
+            while (to4ka>108) to4ka-=108;
+        }
+        System.out.println("Вася встал на отметке-"+ to4ka);
+    }
+
+}
